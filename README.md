@@ -3,6 +3,7 @@
 1. yii2表自动生成,user表里加上avatar字段
 2. 在frontend/web下添加包含layim的layui文件夹
 3. 执行下面命令开启workeman:
+
    ```
    nohup  ./yii worker/run start >> /data1/logs/worker.log  2>&1 &
    ```
@@ -12,4 +13,4 @@
 ![](https://o8ekw8sx0.qnssl.com/QQ20161215-1@2x.png)
 ![](https://o8ekw8sx0.qnssl.com/QQ20161215-0@2x.png)
 
-demo地址：im.saber91.com
+demo地址：<http://im.saber91.com>
