@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="294b9a0f-b18c-48cf-8dd6-3cb51a20556e" name="115layim" url="http://115.28.54.145">
+        <fileTransfer host="115.28.54.145" port="21" password="dfd9dfcbdfc8dfcfdfd8dfccdfdedfda" username="saberftp">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

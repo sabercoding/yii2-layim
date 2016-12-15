@@ -1,0 +1,191 @@
+2016-12-07 14:56:22 pid:19974 Workerman[yii] worker/run 
+2016-12-07 14:56:22 pid:19974 Workerman[yii] not run
+2016-12-07 14:56:48 pid:20013 Workerman[yii] worker/run 
+2016-12-07 14:56:48 pid:20013 Workerman[yii] not run
+2016-12-07 14:58:02 pid:20112 Workerman[yii] worker/run 
+2016-12-07 14:58:02 pid:20112 Workerman[yii] not run
+2016-12-07 15:00:31 pid:20243 Workerman[yii] worker/run 
+2016-12-07 15:00:31 pid:20243 Workerman[yii] not run
+2016-12-07 15:00:34 pid:20262 Workerman[yii] worker/run 
+2016-12-07 15:00:34 pid:20262 Workerman[yii] not run
+2016-12-07 15:01:17 pid:20325 Workerman[./yii] worker/run 
+2016-12-07 15:01:17 pid:20325 Workerman[./yii] not run
+2016-12-07 15:02:03 pid:20353 Workerman[./yii] worker/run 
+2016-12-07 15:02:03 pid:20353 Workerman[./yii] not run
+2016-12-07 15:05:00 pid:20398 Workerman[worker/run] start in DEBUG mode
+2016-12-07 15:13:59 pid:20398 Workerman[yii] Stopping ...
+2016-12-07 15:13:59 pid:20398 Workerman[yii] has been stopped
+2016-12-07 15:14:01 pid:20478 Workerman[worker/run] start in DEBUG mode
+2016-12-07 15:19:15 pid:20479 yii\base\ErrorException: Undefined variable: _SESSION in /Users/mfhj-dz-001-331/www/yii2-layim/console/controllers/WorkerController.php:44
+Stack trace:
+#0 /Users/mfhj-dz-001-331/www/yii2-layim/console/controllers/WorkerController.php(44): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/Users/mfhj-dz-...', 44, Array)
+#1 [internal function]: console\controllers\WorkerController->console\controllers\{closure}(Object(Workerman\Connection\TcpConnection))
+#2 /Users/mfhj-dz-001-331/www/yii2-layim/vendor/workerman/workerman/Connection/TcpConnection.php(637): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection))
+#3 /Users/mfhj-dz-001-331/www/yii2-layim/vendor/workerman/workerman/Connection/TcpConnection.php(552): Workerman\Connection\TcpConnection->destroy()
+#4 /Users/mfhj-dz-001-331/www/yii2-layim/vendor/workerman/workerman/Protocols/Websocket.php(98): Workerman\Connection\TcpConnection->close()
+#5 /Users/mfhj-dz-001-331/www/yii2-layim/vendor/workerman/workerman/Connection/TcpConnection.php(393): Workerman\Protocols\Websocket::input('\x88\x82\xDE\xCAh(\xDD#', Object(Workerman\Connection\TcpConnection))
+#6 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #70)
+#7 /Users/mfhj-dz-001-331/www/yii2-layim/vendor/workerman/workerman/Events/Select.php(250): call_user_func_array(Array, Array)
+#8 /Users/mfhj-dz-001-331/www/yii2-layim/vendor/workerman/workerman/Worker.php(1521): Workerman\Events\Select->loop()
+#9 /Users/mfhj-dz-001-331/www/yii2-layim/vendor/workerman/workerman/Worker.php(932): Workerman\Worker->run()
+#10 /Users/mfhj-dz-001-331/www/yii2-layim/vendor/workerman/workerman/Worker.php(895): Workerman\Worker::forkOneWorker(Object(Workerman\Worker))
+#11 /Users/mfhj-dz-001-331/www/yii2-layim/vendor/workerman/workerman/Worker.php(427): Workerman\Worker::forkWorkers()
+#12 /Users/mfhj-dz-001-331/www/yii2-layim/console/controllers/WorkerController.php(50): Workerman\Worker::runAll()
+#13 [internal function]: console\controllers\WorkerController->actionRun('start')
+#14 /Users/mfhj-dz-001-331/www/yii2-layim/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#15 /Users/mfhj-dz-001-331/www/yii2-layim/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#16 /Users/mfhj-dz-001-331/www/yii2-layim/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('run', Array)
+#17 /Users/mfhj-dz-001-331/www/yii2-layim/vendor/yiisoft/yii2/base/Module.php(454): yii\console\Controller->runAction('run', Array)
+#18 /Users/mfhj-dz-001-331/www/yii2-layim/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('worker/run', Array)
+#19 /Users/mfhj-dz-001-331/www/yii2-layim/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('worker/run', Array)
+#20 /Users/mfhj-dz-001-331/www/yii2-layim/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#21 /Users/mfhj-dz-001-331/www/yii2-layim/yii(27): yii\base\Application->run()
+#22 {main}
+2016-12-07 15:19:15 pid:20479 WORKER EXIT UNEXPECTED 
+2016-12-07 15:19:15 pid:20482 yii\base\ErrorException: Undefined variable: _SESSION in /Users/mfhj-dz-001-331/www/yii2-layim/console/controllers/WorkerController.php:44
+Stack trace:
+#0 /Users/mfhj-dz-001-331/www/yii2-layim/console/controllers/WorkerController.php(44): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/Users/mfhj-dz-...', 44, Array)
+#1 [internal function]: console\controllers\WorkerController->console\controllers\{closure}(Object(Workerman\Connection\TcpConnection))
+#2 /Users/mfhj-dz-001-331/www/yii2-layim/vendor/workerman/workerman/Connection/TcpConnection.php(637): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection))
+#3 /Users/mfhj-dz-001-331/www/yii2-layim/vendor/workerman/workerman/Connection/TcpConnection.php(552): Workerman\Connection\TcpConnection->destroy()
+#4 /Users/mfhj-dz-001-331/www/yii2-layim/vendor/workerman/workerman/Protocols/Websocket.php(98): Workerman\Connection\TcpConnection->close()
+#5 /Users/mfhj-dz-001-331/www/yii2-layim/vendor/workerman/workerman/Connection/TcpConnection.php(393): Workerman\Protocols\Websocket::input('\x88\x82\xE2b\x00\x07\xE1\x8B', Object(Workerman\Connection\TcpConnection))
+#6 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #75)
+#7 /Users/mfhj-dz-001-331/www/yii2-layim/vendor/workerman/workerman/Events/Select.php(250): call_user_func_array(Array, Array)
+#8 /Users/mfhj-dz-001-331/www/yii2-layim/vendor/workerman/workerman/Worker.php(1521): Workerman\Events\Select->loop()
+#9 /Users/mfhj-dz-001-331/www/yii2-layim/vendor/workerman/workerman/Worker.php(932): Workerman\Worker->run()
+#10 /Users/mfhj-dz-001-331/www/yii2-layim/vendor/workerman/workerman/Worker.php(895): Workerman\Worker::forkOneWorker(Object(Workerman\Worker))
+#11 /Users/mfhj-dz-001-331/www/yii2-layim/vendor/workerman/workerman/Worker.php(427): Workerman\Worker::forkWorkers()
+#12 /Users/mfhj-dz-001-331/www/yii2-layim/console/controllers/WorkerController.php(50): Workerman\Worker::runAll()
+#13 [internal function]: console\controllers\WorkerController->actionRun('start')
+#14 /Users/mfhj-dz-001-331/www/yii2-layim/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#15 /Users/mfhj-dz-001-331/www/yii2-layim/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#16 /Users/mfhj-dz-001-331/www/yii2-layim/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('run', Array)
+#17 /Users/mfhj-dz-001-331/www/yii2-layim/vendor/yiisoft/yii2/base/Module.php(454): yii\console\Controller->runAction('run', Array)
+#18 /Users/mfhj-dz-001-331/www/yii2-layim/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('worker/run', Array)
+#19 /Users/mfhj-dz-001-331/www/yii2-layim/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('worker/run', Array)
+#20 /Users/mfhj-dz-001-331/www/yii2-layim/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#21 /Users/mfhj-dz-001-331/www/yii2-layim/yii(27): yii\base\Application->run()
+#22 {main}
+2016-12-07 15:19:15 pid:20482 WORKER EXIT UNEXPECTED 
+2016-12-07 15:19:15 pid:20478 worker[none:20479] exit with status 64000
+2016-12-07 15:19:15 pid:20478 worker[none:20482] exit with status 64000
+2016-12-07 15:22:31 pid:20497 yii\base\ErrorException: Undefined variable: _SESSION in /Users/mfhj-dz-001-331/www/yii2-layim/console/controllers/WorkerController.php:44
+Stack trace:
+#0 /Users/mfhj-dz-001-331/www/yii2-layim/console/controllers/WorkerController.php(44): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/Users/mfhj-dz-...', 44, Array)
+#1 [internal function]: console\controllers\WorkerController->console\controllers\{closure}(Object(Workerman\Connection\TcpConnection))
+#2 /Users/mfhj-dz-001-331/www/yii2-layim/vendor/workerman/workerman/Connection/TcpConnection.php(637): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection))
+#3 /Users/mfhj-dz-001-331/www/yii2-layim/vendor/workerman/workerman/Connection/TcpConnection.php(552): Workerman\Connection\TcpConnection->destroy()
+#4 /Users/mfhj-dz-001-331/www/yii2-layim/vendor/workerman/workerman/Protocols/Websocket.php(98): Workerman\Connection\TcpConnection->close()
+#5 /Users/mfhj-dz-001-331/www/yii2-layim/vendor/workerman/workerman/Connection/TcpConnection.php(393): Workerman\Protocols\Websocket::input('\x88\x82\xEEB]\xD2\xED\xAB', Object(Workerman\Connection\TcpConnection))
+#6 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #72)
+#7 /Users/mfhj-dz-001-331/www/yii2-layim/vendor/workerman/workerman/Events/Select.php(250): call_user_func_array(Array, Array)
+#8 /Users/mfhj-dz-001-331/www/yii2-layim/vendor/workerman/workerman/Worker.php(1521): Workerman\Events\Select->loop()
+#9 /Users/mfhj-dz-001-331/www/yii2-layim/vendor/workerman/workerman/Worker.php(932): Workerman\Worker->run()
+#10 /Users/mfhj-dz-001-331/www/yii2-layim/vendor/workerman/workerman/Worker.php(895): Workerman\Worker::forkOneWorker(Object(Workerman\Worker))
+#11 /Users/mfhj-dz-001-331/www/yii2-layim/vendor/workerman/workerman/Worker.php(1046): Workerman\Worker::forkWorkers()
+#12 /Users/mfhj-dz-001-331/www/yii2-layim/vendor/workerman/workerman/Worker.php(430): Workerman\Worker::monitorWorkers()
+#13 /Users/mfhj-dz-001-331/www/yii2-layim/console/controllers/WorkerController.php(50): Workerman\Worker::runAll()
+#14 [internal function]: console\controllers\WorkerController->actionRun('start')
+#15 /Users/mfhj-dz-001-331/www/yii2-layim/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#16 /Users/mfhj-dz-001-331/www/yii2-layim/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#17 /Users/mfhj-dz-001-331/www/yii2-layim/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('run', Array)
+#18 /Users/mfhj-dz-001-331/www/yii2-layim/vendor/yiisoft/yii2/base/Module.php(454): yii\console\Controller->runAction('run', Array)
+#19 /Users/mfhj-dz-001-331/www/yii2-layim/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('worker/run', Array)
+#20 /Users/mfhj-dz-001-331/www/yii2-layim/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('worker/run', Array)
+#21 /Users/mfhj-dz-001-331/www/yii2-layim/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#22 /Users/mfhj-dz-001-331/www/yii2-layim/yii(27): yii\base\Application->run()
+#23 {main}
+2016-12-07 15:22:31 pid:20497 WORKER EXIT UNEXPECTED 
+2016-12-07 15:22:32 pid:20478 worker[none:20497] exit with status 64000
+2016-12-07 15:22:32 pid:20480 yii\base\ErrorException: Undefined variable: _SESSION in /Users/mfhj-dz-001-331/www/yii2-layim/console/controllers/WorkerController.php:44
+Stack trace:
+#0 /Users/mfhj-dz-001-331/www/yii2-layim/console/controllers/WorkerController.php(44): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/Users/mfhj-dz-...', 44, Array)
+#1 [internal function]: console\controllers\WorkerController->console\controllers\{closure}(Object(Workerman\Connection\TcpConnection))
+#2 /Users/mfhj-dz-001-331/www/yii2-layim/vendor/workerman/workerman/Connection/TcpConnection.php(637): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection))
+#3 /Users/mfhj-dz-001-331/www/yii2-layim/vendor/workerman/workerman/Connection/TcpConnection.php(552): Workerman\Connection\TcpConnection->destroy()
+#4 /Users/mfhj-dz-001-331/www/yii2-layim/vendor/workerman/workerman/Protocols/Websocket.php(98): Workerman\Connection\TcpConnection->close()
+#5 /Users/mfhj-dz-001-331/www/yii2-layim/vendor/workerman/workerman/Connection/TcpConnection.php(393): Workerman\Protocols\Websocket::input('\x88\x82X\xED\x8E<[\x04', Object(Workerman\Connection\TcpConnection))
+#6 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #70)
+#7 /Users/mfhj-dz-001-331/www/yii2-layim/vendor/workerman/workerman/Events/Select.php(250): call_user_func_array(Array, Array)
+#8 /Users/mfhj-dz-001-331/www/yii2-layim/vendor/workerman/workerman/Worker.php(1521): Workerman\Events\Select->loop()
+#9 /Users/mfhj-dz-001-331/www/yii2-layim/vendor/workerman/workerman/Worker.php(932): Workerman\Worker->run()
+#10 /Users/mfhj-dz-001-331/www/yii2-layim/vendor/workerman/workerman/Worker.php(895): Workerman\Worker::forkOneWorker(Object(Workerman\Worker))
+#11 /Users/mfhj-dz-001-331/www/yii2-layim/vendor/workerman/workerman/Worker.php(427): Workerman\Worker::forkWorkers()
+#12 /Users/mfhj-dz-001-331/www/yii2-layim/console/controllers/WorkerController.php(50): Workerman\Worker::runAll()
+#13 [internal function]: console\controllers\WorkerController->actionRun('start')
+#14 /Users/mfhj-dz-001-331/www/yii2-layim/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#15 /Users/mfhj-dz-001-331/www/yii2-layim/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#16 /Users/mfhj-dz-001-331/www/yii2-layim/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('run', Array)
+#17 /Users/mfhj-dz-001-331/www/yii2-layim/vendor/yiisoft/yii2/base/Module.php(454): yii\console\Controller->runAction('run', Array)
+#18 /Users/mfhj-dz-001-331/www/yii2-layim/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('worker/run', Array)
+#19 /Users/mfhj-dz-001-331/www/yii2-layim/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('worker/run', Array)
+#20 /Users/mfhj-dz-001-331/www/yii2-layim/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#21 /Users/mfhj-dz-001-331/www/yii2-layim/yii(27): yii\base\Application->run()
+#22 {main}
+2016-12-07 15:22:32 pid:20480 WORKER EXIT UNEXPECTED 
+2016-12-07 15:22:32 pid:20478 worker[none:20480] exit with status 64000
+2016-12-07 15:27:51 pid:20478 Workerman[yii] Stopping ...
+2016-12-07 15:27:51 pid:20478 Workerman[yii] has been stopped
+2016-12-07 15:44:22 pid:21607 Workerman[worker/run] start in DEBUG mode
+2016-12-07 15:46:56 pid:21607 Workerman[yii] Stopping ...
+2016-12-07 15:46:56 pid:21607 Workerman[yii] has been stopped
+2016-12-07 15:46:58 pid:21775 Workerman[worker/run] start in DEBUG mode
+2016-12-07 15:49:16 pid:21775 Workerman[yii] Stopping ...
+2016-12-07 15:49:16 pid:21775 Workerman[yii] has been stopped
+2016-12-07 15:49:17 pid:21950 Workerman[worker/run] start in DEBUG mode
+2016-12-07 15:53:38 pid:21950 Workerman[yii] Stopping ...
+2016-12-07 15:53:38 pid:21950 Workerman[yii] has been stopped
+2016-12-07 15:53:39 pid:22009 Workerman[worker/run] start in DEBUG mode
+2016-12-07 18:40:03 pid:22009 Workerman[yii] Stopping ...
+2016-12-07 18:40:03 pid:22009 Workerman[yii] has been stopped
+2016-12-07 18:40:05 pid:23791 Workerman[worker/run] start in DEBUG mode
+2016-12-07 18:42:59 pid:23791 Workerman[yii] Stopping ...
+2016-12-07 18:42:59 pid:23791 Workerman[yii] has been stopped
+2016-12-07 18:43:02 pid:23848 Workerman[worker/run] start in DEBUG mode
+2016-12-07 18:50:27 pid:24134 Workerman[worker/run] stop 
+2016-12-07 18:50:27 pid:24134 Workerman[worker/run] not run
+2016-12-07 18:52:34 pid:24255 Workerman[worker/run] start in DEBUG mode
+2016-12-07 18:52:36 pid:24255 Workerman[yii] Stopping ...
+2016-12-07 18:52:36 pid:24255 Workerman[yii] has been stopped
+2016-12-07 18:52:51 pid:24292 Workerman[worker/run] start in DEBUG mode
+2016-12-07 18:53:09 pid:24296 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3
+2016-12-07 18:53:09 pid:24296 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3
+2016-12-07 19:16:05 pid:24295 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3
+2016-12-07 19:16:05 pid:24295 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3
+2016-12-07 19:18:58 pid:24292 Workerman[yii] Stopping ...
+2016-12-07 19:18:58 pid:24292 Workerman[yii] has been stopped
+2016-12-07 19:19:53 pid:24397 Workerman[worker/run] start in DEBUG mode
+2016-12-08 10:45:40 pid:24397 Workerman[yii] Stopping ...
+2016-12-08 10:45:40 pid:24397 Workerman[yii] has been stopped
+2016-12-08 10:45:42 pid:27413 Workerman[worker/run] start in DEBUG mode
+2016-12-08 12:07:05 pid:27413 Workerman[yii] Stopping ...
+2016-12-08 12:07:06 pid:27413 Workerman[yii] has been stopped
+2016-12-14 21:34:36 pid:13356 Workerman[worker/run] start in DEBUG mode
+2016-12-14 21:34:40 pid:13361 yii\base\ErrorException: Undefined index: username in /Users/mfhj-dz-001-331/www/yii2-layim/console/controllers/Events.php:25
+Stack trace:
+#0 /Users/mfhj-dz-001-331/www/yii2-layim/console/controllers/Events.php(25): yii\base\ErrorHandler->handleError(8, 'Undefined index...', '/Users/mfhj-dz-...', 25, Array)
+#1 [internal function]: Events::onMessage('7f0000010b54000...', '{"type":"init",...')
+#2 /Users/mfhj-dz-001-331/www/yii2-layim/vendor/workerman/gateway-worker/src/BusinessWorker.php(361): call_user_func('Events::onMessa...', '7f0000010b54000...', '{"type":"init",...')
+#3 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#4 /Users/mfhj-dz-001-331/www/yii2-layim/vendor/workerman/workerman/Connection/TcpConnection.php(429): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#5 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #92)
+#6 /Users/mfhj-dz-001-331/www/yii2-layim/vendor/workerman/workerman/Events/Select.php(250): call_user_func_array(Array, Array)
+#7 /Users/mfhj-dz-001-331/www/yii2-layim/vendor/workerman/workerman/Worker.php(1521): Workerman\Events\Select->loop()
+#8 /Users/mfhj-dz-001-331/www/yii2-layim/vendor/workerman/gateway-worker/src/BusinessWorker.php(175): Workerman\Worker->run()
+#9 /Users/mfhj-dz-001-331/www/yii2-layim/vendor/workerman/workerman/Worker.php(932): GatewayWorker\BusinessWorker->run()
+#10 /Users/mfhj-dz-001-331/www/yii2-layim/vendor/workerman/workerman/Worker.php(895): Workerman\Worker::forkOneWorker(Object(GatewayWorker\BusinessWorker))
+#11 /Users/mfhj-dz-001-331/www/yii2-layim/vendor/workerman/workerman/Worker.php(427): Workerman\Worker::forkWorkers()
+#12 /Users/mfhj-dz-001-331/www/yii2-layim/console/controllers/WorkerController.php(52): Workerman\Worker::runAll()
+#13 [internal function]: console\controllers\WorkerController->actionRun('start')
+#14 /Users/mfhj-dz-001-331/www/yii2-layim/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#15 /Users/mfhj-dz-001-331/www/yii2-layim/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#16 /Users/mfhj-dz-001-331/www/yii2-layim/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('run', Array)
+#17 /Users/mfhj-dz-001-331/www/yii2-layim/vendor/yiisoft/yii2/base/Module.php(454): yii\console\Controller->runAction('run', Array)
+#18 /Users/mfhj-dz-001-331/www/yii2-layim/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('worker/run', Array)
+#19 /Users/mfhj-dz-001-331/www/yii2-layim/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('worker/run', Array)
+#20 /Users/mfhj-dz-001-331/www/yii2-layim/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#21 /Users/mfhj-dz-001-331/www/yii2-layim/yii(27): yii\base\Application->run()
+#22 {main}
+2016-12-14 21:34:40 pid:13361 WORKER EXIT UNEXPECTED 
+2016-12-14 21:34:40 pid:13356 worker[YourAppBusinessWorker:13361] exit with status 64000
