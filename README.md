@@ -9,3 +9,7 @@
 4. 登录后显示界面
 ![](https://o8ekw8sx0.qnssl.com/04447FAB-F52A-4F59-AC14-862DB81D29BC.png)
 5. 选择一人进行移动端或者pc端聊天.
+![](https://o8ekw8sx0.qnssl.com/QQ20161215-1@2x.png)
+![](https://o8ekw8sx0.qnssl.com/QQ20161215-0@2x.png)
+
+demo地址：im.saber91.com
