@@ -146,6 +146,15 @@ class SiteController extends Controller {
             'to' => $to,
         ]);
     }
+    
+    public function actionMobile1($to) {
+        $model = User::findOne(Yii::$app->user->id);
+        $to = User::findOne($to);
+        return $this->render('mobile1', [
+            'model' => $model,
+            'to' => $to,
+        ]);
+    }
 
     public function actionPc($to) {
         $model = User::findOne(Yii::$app->user->id);

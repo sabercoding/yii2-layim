@@ -5,14 +5,21 @@
 $this->title = 'My Yii Application';
 ?>
 <div class="site-index">
-    <h4>用户列表 mobile</h4>
+    <h4>用户列表 移动端</h4>
     <?php
     foreach ($model as $value) {
         echo '<p><a href="http://im.saber91.com/site/mobile?to='.$value->id.'">'.$value->username.'</a>'."</p>";
     }
 
     ?>
-    <h4>用户列表 pc</h4>
+    <h4>用户列表 带打赏的移动端</h4>
+    <?php
+    foreach ($model as $value) {
+        echo '<p><a href="http://im.saber91.com/site/mobile1?to='.$value->id.'">'.$value->username.'</a>'."</p>";
+    }
+
+    ?>
+    <h4>用户列表 电脑端</h4>
     <?php
     foreach ($model as $value) {
         echo '<p><a href="http://im.saber91.com/site/pc?to='.$value->id.'">'.$value->username.'</a>'."</p>";

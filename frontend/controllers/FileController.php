@@ -13,10 +13,10 @@ class FileController extends Controller {
 
     public function actionUpload() {
         $ext = '';
-        if ($_FILES["file"]["size"] > 20000) {
-            return \yii\helpers\Json::encode(['code' => 1, 'msg' => '文件超过最大限制', 'data' => ['src' => $ext]]);
+        if ($_FILES["file"]["size"] > 30000) {
+            return \yii\helpers\Json::encode(['code' => 1, 'msg' => '文件超过最大限制30kb', 'data' => ['src' => $ext]]);
         }
-        if (($_FILES["file"]["type"] != "image/gif") || ($_FILES["file"]["type"] != "image/jpeg") || ($_FILES["file"]["type"] != "image/pjpeg") || ($_FILES["file"]["type"] != "image/png")) {
+        if (($_FILES["file"]["type"] != "image/gif") && ($_FILES["file"]["type"] != "image/jpeg") && ($_FILES["file"]["type"] != "image/pjpeg") && ($_FILES["file"]["type"] != "image/png") && ($_FILES["file"]["type"] != "image/PNG")) {
             return \yii\helpers\Json::encode(['code' => 2, 'msg' => '文件格式不支持', 'data' => ['src' => $ext]]);
         }
 

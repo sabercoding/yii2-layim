@@ -189,3 +189,4 @@ Stack trace:
 #22 {main}
 2016-12-14 21:34:40 pid:13361 WORKER EXIT UNEXPECTED 
 2016-12-14 21:34:40 pid:13356 worker[YourAppBusinessWorker:13361] exit with status 64000
+2016-12-16 13:09:29 pid:2676 Workerman[worker/run] start in DEBUG mode

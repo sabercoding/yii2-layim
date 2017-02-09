@@ -66,7 +66,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
 
         //建立WebSocket通讯
-        var socket = new WebSocket('ws://127.0.0.1:8282');
+        var socket = new WebSocket('ws://115.28.54.145:8282');
         //连接成功时触发
         socket.onopen = function(){
             // 登录
